@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Common Name Element</title>
+    <script>
+        function bodyload() {
+            result =document.getElementsByName("pay");
+            alert("Total number of payment methods: " + result.length);
+        }
+    </script>
+  </head>
+  <body onload="bodyload()">
+    <fieldset>
+        <legend>Payment Mathods</legend>
+        <input type=" radio" name ="pay"> Cash
+         <input type=" radio" name ="pay"> UPI
+        <input type=" radio" name ="pay"> Credit Card
+    </fieldset>
+  </body>
+</html>
