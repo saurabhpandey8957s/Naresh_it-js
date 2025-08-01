@@ -1,0 +1,12 @@
+<script>
+  function f1() {
+    let x; // Declaring
+    x = 10; // Assigning
+    if (x == 10) {
+      let y = 20; // Initialization
+      // here y is not access outside the block scope so this code give Uncaught ReferenceError: y is not defined in consloe
+    }
+    document.write("x=" + x + "<br>" + "y=" + y);
+  }
+  f1();
+</script>

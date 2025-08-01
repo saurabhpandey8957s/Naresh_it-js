@@ -1,0 +1,13 @@
+<script>
+  function f1() {
+    var x; // Declaring
+    x = 10; // Assigning
+    if (x == 10) {
+      var y = 20; // Initialization
+
+      var y = 30; // Shadowing means re declaring
+    }
+    document.write("x=" + x + "<br>" + "y=" + y);
+  }
+  f1();
+</script>
