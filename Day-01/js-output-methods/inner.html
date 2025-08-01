@@ -1,18 +1,20 @@
 <html>
   <head>
-    <title>Console</title>
+    <title>Confirm</title>
     <script>
       function DeleteClick() {
         x = confirm("Are you sure want to delete");
         if (x == true) {
-          alert("Record is deleted successfully");
+          document.getElementById("msg").innerHTML =
+            "<font color='red'>Record Deleted</font>";
         } else {
-          console.log("Record canceled");
+          alert("Record canceled");
         }
       }
     </script>
   </head>
   <body>
     <button onclick="DeleteClick()">Delete</button>
+    <p id="msg"></p>
   </body>
 </html>

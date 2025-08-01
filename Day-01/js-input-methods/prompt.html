@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Input</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <script>
+      function CreateClick() {
+        folderName = prompt("Enter Folder Name:", "New_Folder");
+        if (folderName == null) {
+          document.write("You cancelled");
+        } else if (folderName == "") {
+          document.write("Name can't be empty");
+        } else {
+          document.getElementById("msg").innerHTML +=
+            "Folder Created :" + folderName + "<br>";
+        }
+      }
+      function bodyload() {
+        username = prompt("Your Name:");
+        document.getElementById("heading").innerHTML = "Hello ! " + username;
+      }
+    </script>
+  </head>
+  <body class="container-fluid" onload="bodyload()">
+    <h2 id="heading"></h2>
+    <div class="form-group">
+      <button onclick="CreateClick()" class="btn btn-primary">
+        Create Folder
+      </button>
+    </div>
+    <div class="form-group">
+      <p id="msg"></p>
+    </div>
+  </body>
+</html>

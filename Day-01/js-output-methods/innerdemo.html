@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reference</title>
+    <script type="text/javascript">
+      function DeleteClick() {
+        x = confirm("Are you sure want to Delete?");
+        if (x == true) {
+          document.getElementById("msg").innerText =
+            "<font color='red'>Record Deleted</font>";
+        } else {
+          alert("Canceled..");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="DeleteClick()">Delete</button>
+    <p align="center" id="msg"></p>
+  </body>
+</html>
