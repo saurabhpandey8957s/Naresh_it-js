@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <script>
+      function VerifyUser() {
+        var username = document.getElementById("txtName").value;
+        var msg = document.getElementById("msg");
+
+        if (username.length >= 4 && username.length <= 10) {
+          msg.innerHTML = "User name Verified".bold().fontcolor('green');
+        } else {
+          msg.innerHTML = "Invalid User name".italics().fontcolor('red');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>register User</h2>
+    <dl>
+      <dt>User Name</dt>
+      <dd><input type="text" id="txtName" /></dd>
+      <dd id="msg"></dd>
+    </dl>
+    <button onclick="VerifyUser()">Submit</button>
+  </body>
+</html>

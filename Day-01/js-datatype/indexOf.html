@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>String</title>
+    <script>
+        function VerifyEmail(){
+            var email = document.getElementById("txtemail").value;
+            var msg = document.querySelector("h2"); // class Selector 
+            var atPos = email.indexOf("@");
+            //document.write(atPos);
+            if(atPos<2){
+                msg.innerHTML = "Invalid Email";
+            }
+            else{
+                msg.innerHTML = "Email Verified";
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Your Email</legend>
+      <input type="email" id="txtemail" />
+      <button onclick="VerifyEmail()">Submit</button>
+    </fieldset>
+    <h2 style ="color: green"></h2>
+  </body>
+</html>

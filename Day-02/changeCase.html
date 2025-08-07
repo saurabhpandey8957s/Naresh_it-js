@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <script>
+      function ChangeCase() {
+        var username = document.getElementById("txtName").value;
+        document.getElementById("txtName").value = username.toUpperCase();
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="txtName" />
+    <button onclick="ChangeCase()">Submit</button>
+  </body>
+</html>

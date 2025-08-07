@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <script>
+      function ChangeCase() {
+        var username = document.getElementById("txtName").value;
+        var firstChar = username.charAt(0);
+        var restChar = username.substring(1);
+        var sentence = firstChar.toUpperCase() + restChar.toLowerCase();
+        document.getElementById("txtName").value = sentence;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="txtName" />
+    <button onclick="ChangeCase()">Submit</button>
+  </body>
+</html>

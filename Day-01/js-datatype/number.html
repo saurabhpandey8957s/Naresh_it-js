@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data type Number</title>
+    <script>
+      function SubmitClick() {
+        var age = document.getElementById("1stAge").value;
+        document.write(
+          "Your age will be" + " " + (parseInt(age) + 1) + " " + "next year"
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <dl>
+      <dt>Select Age</dt>
+      <dd>
+        <select id="1stAge">
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+        </select>
+      </dd>
+      <button onclick="SubmitClick()">Submit</button>
+    </dl>
+  </body>
+</html>
