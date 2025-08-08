@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamically creating of Array</title>
+    <script>
+      function AddImage() {
+        var pic = document.createElement("img");
+        pic.src = "Saurabh_Pandey.png";
+        pic.width = "100";
+        pic.height = "100";
+
+        document.getElementById("container").appendChild(pic);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <button onclick="AddImage()">Add Image to Page</button>
+    </div>
+    <div id="container"></div>
+  </body>
+</html>
