@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Opertor Demo</title>
+    <script>
+      function SubmitClick() {
+        var n = document.getElementById("txtEven").value;
+        var msg = document.getElementById("msg");
+        if (parseInt(n) % 2 == 0) {
+          msg.innerHTML = "Verified No is Even";
+        } else {
+          msg.innerHTML = "No is Odd";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Enter Even Number:
+    <input type="text" id="txtEven" />
+    <button onclick="SubmitClick()">Submit</button>
+    <br />
+    <div id="msg"></div>
+  </body>
+</html>

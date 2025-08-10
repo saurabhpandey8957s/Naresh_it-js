@@ -1,0 +1,12 @@
+<script>
+    let Mfd = new Date("2021-08-15");
+    let months = ["January", "Feb", "March", "April", "May", "June", "July", "August", "September", "Oct", "Nov", "Dec"];
+    let weekdays = ["Sunday", "Mon", "Tue", "Wed", "Thrusday", "Friday", "Saturday"];
+
+    document.write(`
+    Manufactured Date : ${Mfd.getDate()}<br>
+    Manufactured Months : ${months[Mfd.getMonth()]}<br>
+    Manufactured Weekdays: ${weekdays[Mfd.getDay()]}<br>
+    Manufactured Year: ${Mfd.getFullYear()}<br>
+    `)
+</script>
