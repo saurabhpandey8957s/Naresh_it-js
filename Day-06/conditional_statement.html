@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Conditional Statement</title>
+    <script>
+      var userdetails = {
+        CardNumber: "44445555666677778938",
+        Cvv: "4040",
+        Expiry: "2025"
+      };
+
+      function payClick() {
+        var card = document.getElementById("txtCard").value;
+        var cvv = document.getElementById("txtCvv").value;
+        var expiry = document.getElementById("txtExpiry").value;
+        var msg = document.getElementById("msg");
+
+        if (userdetails.CardNumber == card) {
+          if (userdetails.Cvv == cvv) {
+            if (userdetails.Expiry == expiry) {
+              document.write("Payment Success...");
+            } else {
+              msg.innerHTML = "Invalid Expiry";
+            }
+          } else {
+            msg.innerHTML = "Invalid CVV";
+          }
+        } else {
+            msg.innerHTML = "Invalid Card Number";
+        }
+      }
+    </script>
+  </head>
+  <body>
+   <fieldset>
+    <legend>Payment Details</legend>
+    <dl>
+        <dt>Card Number</dt>
+        <dd><input type ="text" id="txtCard"></dd>
+        <dt>CVV</dt>
+        <dd><input type ="text" id="txtCvv"></dd>
+        <dt>Expiry</dt>
+        <dd><input type ="text" id="txtExpiry"></dd>
+        
+    </dl>
+    <button onclick="payClick()">Pay</button>
+   </fieldset>
+   <h2 id="msg"></h2>
+  </body>
+</html>
