@@ -1,0 +1,12 @@
+<script>
+    function Login(...loginDetails){
+        const [userid, password, success, failure] = loginDetails;
+
+        if(userid == "john" && password == "john11"){
+            success();
+        }else{
+            failure();
+        }
+    }
+    Login('john', 'john11', function() {document.write('Login Success')}, function(){document.write('Invalid Credentials')});
+</script>

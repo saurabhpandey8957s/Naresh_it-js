@@ -1,0 +1,13 @@
+<script>
+    function Outer(){
+        var msg = "Message from Outer Function";
+        function Inner(){
+            var outerMessage = msg;
+            var innerMessage = "Message from Inner Function";
+
+            return outerMessage + "<br>" + innerMessage;
+        }
+        return Inner();
+    }
+    document.write(Outer());
+</script>
